@@ -1,0 +1,33 @@
+.filter-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+
+  .selected {
+    display: flex;
+    align-items: center;
+    min-width: 20rem;
+    margin-left: 1em;
+    padding: 0.5em 1em;
+    border: 1px solid lightgray;
+    border-radius: 0.25em;
+    cursor: pointer;
+    .selected-item {
+      padding: 0.2em 0.5em;
+      border-radius: 0.6em;
+      margin-right: 0.5em;
+      background-color: lightgray;
+    }
+  }
+
+  .custom-select {
+    position: absolute;
+    visibility: hidden;
+    top: 3em;
+    right: 0;
+    &.show {
+      visibility: visible;
+    }
+  }
+}

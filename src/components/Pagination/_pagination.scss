@@ -1,0 +1,44 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+  margin: 1rem 0;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin: 0 0.25rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #ff5047;
+        color: white;
+      }
+      &.active {
+        background-color: #ff5047;
+        color: white;
+      }
+    }
+  }
+
+  .btn-nav {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: #ff5047;
+      color: white;
+    }
+  }
+}

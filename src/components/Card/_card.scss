@@ -1,0 +1,44 @@
+.movie-card {
+  width: 20rem;
+  height: 25rem;
+  padding: 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.7em;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  .like-button {
+    margin: 0.5rem;
+    align-self: flex-end;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    &.clicked {
+      // change image color to green by applying a filter
+      filter: invert(0.5) sepia(1) saturate(100) hue-rotate(100deg);
+    }
+  }
+
+  .dislike-button {
+    margin: 0.5rem;
+    align-self: flex-end;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    &.clicked {
+      // change image color to red by applying a filter
+      filter: invert(0.5) sepia(1) saturate(100) hue-rotate(350deg);
+    }
+  }
+
+  .delete-movie-button {
+    margin: 0.5rem;
+    border: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+  }
+}

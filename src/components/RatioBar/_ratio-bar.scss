@@ -1,0 +1,27 @@
+.ratio-bar {
+  width: 100%;
+  height: 1rem;
+  background-color: red;
+  border-radius: 0.7em;
+  position: relative;
+
+  span {
+    position: absolute;
+    margin: 0 0.5rem;
+    color: white;
+    right: 0;
+    top: 0;
+  }
+
+  > .percent {
+    position: relative;
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 0.7em;
+
+    span {
+      left: 0;
+    }
+  }
+}
